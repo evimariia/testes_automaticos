@@ -22,20 +22,22 @@ A linguagem deverá ser identificada automaticamente com base na extensão do ar
 ## Compilação e Execução:
 
 Caso a linguagem submetida seja C ou C++, o código deve ser compilado antes da execução utilizando ferramentas apropriadas (por exemplo, gcc para C e g++ para C++).
+
 Para código em Python, não há necessidade de compilação, apenas execução direta.
-O sistema deverá então executar o código passando como entrada uma série de arquivos de input pré-definidos (ex.: 1.in, 2.in, etc.).
-Cada arquivo de input será utilizado em uma execução separada do código.
-Comparação de Saídas:
 
-Após a execução, o sistema deverá comparar a saída gerada pelo código com os arquivos que contêm as saídas esperadas (ex.: 1.out, 2.out, etc.).
-A comparação será feita linha por linha, levando em consideração espaços e formatações (ou outra estratégia de verificação definida pela equipe, como normalização de espaços em branco).
-O sistema deve indicar se a saída está correta ou incorreta para cada teste.
-Resultado Final:
+O sistema deverá então executar o código passando como entrada uma série de arquivos de input pré-definidos. Cada arquivo de input será utilizado em uma execução separada do código.
 
-Seupt scri deve retornar para o usuário um relatório com o resultado de cada teste, informando se o código passou ou não em cada caso.
-Se o código falhar em algum teste, o relatório deve incluir informações sobre qual teste falhou e qual foi a diferença entre a saída gerada e a esperada. 
-Seu script deve fazer um registro em arquivo de texto CSV de todas as vezes que ele é executado (salvar todos os parâmetros que recebeu, quantos testes rodou, quantos passaram, quantos falharam e quantos deram erro).
-Exemplo de Funcionamento:
+## Comparação de Saídas:
+
+Após a execução, o sistema deverá comparar a saída gerada pelo código com os arquivos que contêm as saídas esperadas (ex.: 1.out, 2.out, etc.). A comparação será feita linha por linha, levando em consideração espaços e formatações (ou outra estratégia de verificação definida pela equipe, como normalização de espaços em branco). O sistema deve indicar se a saída está correta ou incorreta para cada teste.
+
+## Resultado Final:
+
+O script deve retornar para o usuário um relatório com o resultado de cada teste, informando se o código passou ou não em cada caso. Se o código falhar em algum teste, o relatório deve incluir informações sobre qual teste falhou e qual foi a diferença entre a saída gerada e a esperada. 
+
+O script deve fazer um registro em arquivo de texto CSV de todas as vezes que ele é executado (salvar todos os parâmetros que recebeu, quantos testes rodou, quantos passaram, quantos falharam e quantos deram erro).
+
+## Exemplo de Funcionamento:
 
 O usuário submete um arquivo main.py.
 O sistema identifica que o arquivo está em Python, prepara a execução.
