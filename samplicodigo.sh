@@ -51,7 +51,7 @@ case "$input_file" in
     *.cpp) language="cpp";;
     *) echo "Linguagem não suportada"; exit 1 ;;
 esac
-
+#base_name=$(basename "$input_file" .cpp)
 # Carregar as configurações
 load_config
 
